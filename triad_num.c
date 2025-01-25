@@ -1,4 +1,4 @@
-/*Program to print traid numbers*/
+/*Program to print triad numbers*/
 #include <stdio.h>
 int main(){
 int m,n,p,num,d1,d2,d3,i,k;
