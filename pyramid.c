@@ -87,11 +87,11 @@ printf("\nSixth pyramid\n");
 		
 /*Code for 7th pyramid*/
 printf("\nSeventh Pyramid\n");
-		for (i=1; i<=n; i++)
+		for (i=n; i>=1; i--)
 		{
-			for (j=1; j<=i; j++)
+			for (j=n; j>=i; j--)
 			{
-				printf("%d",n+1-j);
+				printf("%d",j);
 			}
 			printf("\n");
 		}
