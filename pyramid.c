@@ -3,7 +3,7 @@
 #include <stdio.h>
 int main()
 {
-	int n,i,j,a=2,p;
+	int n,i,j,a=2,p,k=1;
 	p=a;
 	printf("Enter the number of lines:");
 	scanf("%d",&n);
@@ -55,7 +55,46 @@ printf("\nFourth pyramid\n");
 			p+=1;
 			a=p;
 		}
+/*Code for 5th pyramid*/
+printf("\nFifth pyramid\n");
+		for (i=1; i<=n; i++)
+		{
+			for (j=1; j<=i; j++)
+			{
+				if ((i%2==0 && j%2!=0) || (i%2!=0 && j%2==0))//if one of the i and j is odd one of them is even then it prints 1 otherwise 0 
+				{
+					printf("0");
+				}
+				else 
+				{
+					printf("1");
+				}
+			}
+			printf("\n");
+		}
+
+/*Code for 6th pyramid*/
+printf("\nSixth pyramid\n");
+		for (i=1; i<=n; i++)
+		{
+			for (j=1; j<=i; j++)
+			{
+				printf("%d\t",k);
+				k++;
+			}
+			printf("\n");
+		}
 		
+/*Code for 7th pyramid*/
+printf("\nSeventh Pyramid\n");
+		for (i=1; i<=n; i++)
+		{
+			for (j=1; j<=i; j++)
+			{
+				printf("%d",n+1-j);
+			}
+			printf("\n");
+		}
 
 return 0;
 }
