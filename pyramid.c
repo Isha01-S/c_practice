@@ -1,4 +1,4 @@
-/*Program to print star pyramid in which number of stars in a line is equal to that line number*/
+/*Program to print pyramids*/
 
 #include <stdio.h>
 int main()
