@@ -96,5 +96,16 @@ printf("\nSeventh Pyramid\n");
 			printf("\n");
 		}
 
+/*Code for 8th pyramid*/
+printf("\nEighth Pyramid\n");
+		for (i=n; i>=1; i--)
+		{
+			for (j=n; j>=i; j--)
+			{
+				printf("%d",i);
+			}
+			printf("\n");
+		}
+
 return 0;
 }
