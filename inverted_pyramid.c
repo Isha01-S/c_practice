@@ -23,13 +23,13 @@ printf("\nloop 1\n\n");
 
 
 //loop2
-printf("\nloop2\n");
+printf("\nloop2(this works for oddd numbers only)\n");
 
-	for (i=1; i<=5; i++)
+	for (i=1; i<=n; i++)
 	{
-		for (j=5; j>=i; j--)
+		for (j=n; j>=i; j--)
 		{
-				if (i==4)
+				if (i>=n/2+1)
 				{
 				goto loop;
 				}
@@ -38,7 +38,7 @@ printf("\nloop2\n");
 		printf("\n");
 	}
 loop:
-	for(i=2; i>=1; i--)
+	for(i=n/2+1; i>=1; i--)
 	{
 		for (j=1; j<=i;j++)
 		{
