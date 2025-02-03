@@ -50,5 +50,41 @@ loop:
 end:
 	printf("\n");
 
+//loop3
+printf("\nlooop3\n");
+
+	for (i=n; i>=1; i--)
+	{
+		for (j=1; j<=i; j++)
+		{
+			printf("%d",j);
+		}
+		printf("\n");
+	}
+
+//loop4
+printf("\nloop4\n");
+
+	for (i=n; i>=1; i--)
+	{
+		for (j=1; j<=i; j++)
+		{
+			printf("%d",i);
+		}
+		printf("\n");
+	}
+
+//loop5
+printf("\nloop5\n");
+
+	for (i=1; i<=n; i++)
+	{
+		for (j=n; j>=i; j--)
+		{
+			printf("%d",j);
+		}
+		printf("\n");
+	}
+
 return 0;
 }
