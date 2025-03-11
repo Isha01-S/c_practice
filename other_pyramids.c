@@ -288,7 +288,141 @@ int main()
 		}
 		printf("\n");
 	}
+
+	printf("\nPyramid 17\n");
+
+	for(i=1; i<=n; i++)
+	{
+		for(j=i;j<=n;j++)
+		{
+			printf(" ");
+		}
+		for(j=1;j<=2*i-1;j++)
+		{
+			printf("%d",i);
+		}
+		printf("\n");
+	}
+	for(i=n-1; i>=1; i--)
+	{
+		for(j=i;j<=n; j++)
+		{
+			printf(" ");
+		}
+		for(j=1;j<=2*i-1; j++)
+		{
+			printf("%d",i);
+		}
+		printf("\n");
+	}
+
+	printf("\nPyramid 18\n");
+
+	for(i=1; i<=n; i++)
+	{
+		k=1;
+		for(j=i;j<=n;j++)
+		{
+			printf(" ");
+		}
+		for(j=1;j<=2*i-1;j++)
+		{
+			printf("%d",k++);
+		}
+		printf("\n");
+	}
 	
+	for(i=n-1; i>=1; i--)
+	{
+		k=1;
+		for(j=i;j<=n; j++)
+		{
+			printf(" ");
+		}
+		for(j=1;j<=2*i-1; j++)
+		{
+			printf("%d",k++);
+		}
+		printf("\n");
+	}
+
+	printf("\nPyramid 19\n");
+
+	for(i=1; i<=n;i++)
+	{
+		k=i;
+		for(j=i;j<=n; j++)
+		{
+			printf(" ");
+		}
+		for(j=1;j<=i;j++)
+		{
+			printf("%d", k++);
+		}
+		k=k-2;
+		for(j=1; j<=i-1; j++)
+		{
+			printf("%d",k--);
+		}
+		
+		printf("\n");
+	}
+	for(i=n-1; i>=1; i--)
+	{
+		for(j=i; j<=n; j++)
+		{
+			printf(" ");
+		}
+		for(j=1; j<=i; j++)
+		{
+			printf("%d",k++);
+		}
+		k=k-2;
+		for(j=1; j<=i-1; j++)
+		{
+			printf("%d",k--);
+		}
+		printf("\n");
+	}
+
+	printf("\nPyramid 19\n");
+
+	for(i=1; i<=n;i++)
+	{
+		k=n;
+		for(j=i;j<=n; j++)
+		{
+			printf(" ");
+		}
+		for(j=1;j<=i;j++)
+		{
+			printf("%d", k--);
+		}
+		k=k+2;
+		for(j=1; j<=i-1; j++)
+		{
+			printf("%d",k++);
+		}
+		
+		printf("\n");
+	}
+	for(i=n-1; i>=1; i--)
+	{k=n;
+		for(j=i; j<=n; j++)
+		{
+			printf(" ");
+		}
+		for(j=1; j<=i; j++)
+		{
+			printf("%d",k--);
+		}
+		k=k+2;
+		for(j=1; j<=i-1; j++)
+		{
+			printf("%d",k++);
+		}
+		printf("\n");
+	}
 
 
 	return 0;
