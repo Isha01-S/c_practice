@@ -9,7 +9,7 @@ int main()
 	printf("Enter a number : ");
 	scanf("%lf",&n);
 
-	s= sqrt(n);
+	s= sqrt(n);//library function in C
 
 	printf("Square root of %.2lf is %.2lf\n", n, s);
 
