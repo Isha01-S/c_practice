@@ -1,11 +1,11 @@
 /*Write a program to print Pascal's Triangle.*/
 #include <stdio.h>
-long comb(int, int);//function for number of combinaitons
+long comb(int, int);//function for number of combinations
 long factorial(int);//function for factorial
 int main(){
 
     int i,j,k;
-    printf("Enter the number of rows for Pascal's Triangle.");
+    printf("Enter the number of rows for Pascal's Triangle");
     scanf("%d",&k);
     for(int i=0;i<k;i++){
         for(int j=0; j<=i; j++){
