@@ -1,9 +1,11 @@
-/*Write a program to insert an item in an array at a specified index by moving other elements to the right*/
+/*Program to insert an item in a sorted array at proper place 
+by shifting the other elements to the right*/
+
 #include<stdio.h>
 #define MAX 100
 int main()
 {
-    int arr[MAX], size, insert_item, index;
+    int arr[MAX], size, insert_item;
     printf("Enter the size of the array :");
     scanf("%d", &size);
 
@@ -14,13 +16,19 @@ int main()
 
     printf("Enter the item to be inserted  : ");
     scanf("%d",&insert_item);
-    printf("Enter the index on which the item is to be inserted :");
-    scanf("%d",&index);
 
-    for(int i=size-1; i>=index; i--){
-        arr[i]=arr[i-1];
+    for(int i=size-1; i>=0; i--){
+
+        if (insert_item>arr[i]){
+            arr[i+1]=insert_item;
+            break;
+        }
+        else{
+            arr[i+1]=arr[i];
+
+        }
     }
-    arr[index]=insert_item;
+    
 
     //now the size has increased by 1
 
@@ -30,8 +38,5 @@ int main()
 
     printf("\n");
 
-
-    
-
-    return 0;
+return 0;
 }
