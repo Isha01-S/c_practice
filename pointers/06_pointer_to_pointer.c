@@ -7,7 +7,7 @@ int main(){
     int **ppa = &pa;
 
     printf("value of a= %d\n",a);
-    printf("Address of a= %p\n",&a);\
+    printf("Address of a= %p\n",&a);
     printf("value of pa = address of a= %p\n",pa);
     printf("value of *pa = value of a=%d\n", *pa);
     printf("Address of pa= %p\n", &pa);
